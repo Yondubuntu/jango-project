@@ -7,10 +7,12 @@
         
     </head>
 
-
+    <h1> BLog  </h1>
     <body>  
-        <h2> BLog  </h2>
         {%for p in posts %} 
+        <h2>{{p.title}} </h2>
+        <h4>{{p.created_at}}</h4>
+        <p>{{p.content}}</p>
         <h3> {{ p}}</h3>
         {% endfor %}
     </body>
