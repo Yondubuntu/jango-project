@@ -7,6 +7,7 @@
 
         <title> About me </title>
         <link href= "/practive.css" rel = "stylesheet" type = "text/css">  
+        <script type = "text/javascript" src="whattime.js"></script>
    
         <script type="text/javascript">
             
@@ -19,15 +20,10 @@
             doucument.getElemetById("valueC").innerHTML = Number(a)+ Number(b); 
          }
         
-         function  whatTimeisit() { 
-             alert(new Date());
-         }
-
-        
         </script>
        
          <body>
-            <button onclick="whatTimeisit()">현재시간</button>
+            <button onclick="whattime()">현재시간</button>
             <hr/>
             <label for= "inputA">a</label>
             <input id = "inputA" value = 1 onkeyup ="doSomethimg()"> 
